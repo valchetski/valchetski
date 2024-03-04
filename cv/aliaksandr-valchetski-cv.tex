@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aliaksandr Valchetski} \\ \vspace{1pt}
+    \small \href{mailto:alex.volchetsky@gmail.com}{\underline{alex.volchetsky@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/valchetski/}{\underline{linkedin.com/in/valchetski/}} $|$
+    \href{https://github.com/valchetski}{\underline{github.com/valchetski}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineer (.NET)}{August 2022 -- Present}
+      {Deltatre}{Wrocław, Poland}
+      \resumeItemListStart
+        \resumeItem{Continue working on the Bell Canada project. Prepared architectural decisions
+        for migration from monolithic app to Microservices. Being responsible for the
+        implementation of .Net Core microservices and shared libraries. Splitting of the
+        monolithic apps into microservices and also implementation of new features.}
+        \resumeItem{Improved deployment process in Octopus to be simpler and less error-prone.
+        Migrated CI pipeline to GitHub Actions and created workflow that can be
+        reused to build different microservices.}
+        \resumeItem{Bigger involvement in feature planning. Planning, estimation, and delivery of
+        big features. Mentoring of new team members, helping them to come up to
+        speed.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer (.NET)}{May 2021 - July 2022}
+      {Deltatre}{Minsk, Belarus}
+      \resumeItemListStart
+        \resumeItem{Working on Bell Canada project. Helping to support and implement new features for Crave, CTV, Noovo, TSN, and RDS brands. All of these brands are OTT solutions in entertainment and sports.}
+        \resumeItem{Cooperating with 3rd party connections, customer's systems, our infrastructure, and FE. Constant checking and improving product behavior based on monitoring, logs, and SonarQube reports. Performing releases in Octopus.}
+        \resumeItem{All projects are hosted in AWS, written in C\#, NodeJS, and using MSSQL, MongoDB, and Redis.}
+        \resumeItem{Gained experience in SRE. Have integrated Datadog monitoring service with .NET and NodeJS projects. Had wrote a tool for the creation of automatic monitors and synthetic tests in Datadog. This increased reusability and made configuration easier for other teams.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {ASP.NET Developer}{June 2018 - May 2021}
+      {Brimit}{Minsk, Belarus}
+      \resumeItemListStart
+        \resumeItem{Implementing various projects using Sitecore CMS.}
+        \resumeItem{Worked on classical ASP.NET MVC projects and also on projects that used the Headless CMS approach (Sitecore JSS).}
+        \resumeItem{Creation of separate services on ASP.NET Core.}
+        \resumeItem{Configuration of CI/CD pipelines for several projects using Azure DevOps, Team City, and Octopus}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ASP.NET Developer}{March 2016 - June 2018}
+      {Elilink Consulting}{Minsk, Belarus}
+      \resumeItemListStart
+        \resumeItem{I worked on an ERP system in cooperation with Siemens.}
+        \resumeItem{I've got an idea how what the big projects look like. Has learned to see the bottlenecks in the code.}
+        \resumeItem{A lot of bugs were fixed and that improved my ability to read and understand code written not by me.}
+        \resumeItem{My writing English became better after practicing it with my colleagues from the US.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ASP.NET Developer}{November 2015 - February 2016}
+      {vizor.by}{Minsk, Belarus}
+      \resumeItemListStart
+        \resumeItem{I worked on the project based on the nopCommerce (ASP.NET MVC).}
+        \resumeItem{Modifying and adding new functionality to the back-end and the front-end.}
+        \resumeItem{As a result, I improved my knowledge and skills in JavaScript, jQuery, AngularJS, HTML, CSS, C\#, and SQL.}
+        \resumeItem{I have got experience in commercial development and experience of communication with the customer.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, JavaScript, SQL} \\
+     \textbf{Frameworks}{: .NET, ASP.NET Core} \\
+     \textbf{Databases}{: MongoDB, MSSQL} \\
+     \textbf{CI/CD}{: GitHub Actions, Octopus, Azure DevOps} \\
+     \textbf{Cloud}{: AWS} \\
+     \textbf{SRE}{: Datadog} \\
+     \textbf{Developer Tools}{: Git, Docker, Terraform} \\     
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Full professional proficiency} \\
+     \textbf{Belarusian}{: Native} \\
+     \textbf{Russian}{: Native} \\
+     \textbf{Polish}{: Elementary proficiency}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Belarusian State University of Informatics and Radioelectronics}{Minsk, Belarus}
+      {Bachelor's degree, Information Technology}{2012 -- 2017}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
