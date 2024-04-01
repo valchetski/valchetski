@@ -1,0 +1,80 @@
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+% Personal information
+\newcommand{\myname}{Aliaksandr Valchetski} % Your name (e.g. "John Smith")
+\newcommand{\mytitle}{Senior Software Engineer} % Your title (e.g. "Applicant")
+\newcommand{\myemail}{alex.volchetsky@gmail.com} % Your email (e.g. "me@mydomain.com")
+\newcommand{\mylinkedin}{valchetski} % Your LinkedIn profile name (e.g. "my name")
+\newcommand{\myphone}{+48 511 866 698} % Your phone number (e.g. "123.456.7890")
+\newcommand{\mylocation}{Wrocław, Poland} % Your general location (e.g. "PNW, USA")
+\newcommand{\recipient}{Hiring Manager} % The recipient (e.g. "Hiring Manager")
+\newcommand{\greeting}{Dear} % The greeting to use (e.g. "Dear")
+\newcommand{\closer}{Kind Regards} % The closer to use (e.g. "Kind Regards")
+
+% Company information
+\newcommand{\company}{Microsoft Corporation} % The company (e.g. "Microsoft Corporation")
+\newcommand{\position}{Senior Software Engineer} % Position
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+    \color{gr}
+    \AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\href{tel:\myphone}{\raisebox{-0.1\height}\faPhone\ \underline{\myphone}} $|$ 
+\href{mailto:\myemail}{\raisebox{-0.2\height}\faEnvelope\ \underline{\myemail}} $|$ 
+\href{https://linkedin.com/in/\mylinkedin}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} $|$
+\small{\raisebox{-0.2\height}\faMapMarker\ \mylocation}
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today
+\bigbreak
+\vspace{-0.1in}\greeting\ \recipient,
+\bigbreak
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+I am writing to express my strong interest in the \position{} position at \company.
+Having worked in the software industry for over 8 years, I have developed a deep understanding of the entire software development lifecycle.
+From requirement gathering to deployment and maintenance, I have successfully delivered numerous projects.
+With my extensive experience in software development, I am confident that I would be a valuable asset to your team.
+
+In my current role as a \position{} at Deltatre, I working on implementing and maintaining a complex application for watching entertainment and sports video on demand and live.
+It's a Canadian OTT platform with multiple brands and millions of subscribers that uses such technologies as C\#, ASP.NET, Node.js, Docker, GitHub Actions, Octopus, and MongoDB.
+
+Please do not hesitate to contact me if you have any additional questions. 
+I would be happy to provide extra details.
+I am available for an interview at your discretion.
+Thank you, and I look forward to hearing back from you about the opportunity.
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+\closer,
+
+\myname\\
+\href{mailto:\myemail}{\myemail}\hfill
+\end{flushright}
+
+\end{document}
