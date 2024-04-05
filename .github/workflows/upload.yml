@@ -3,8 +3,6 @@ name: upload
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
   workflow_dispatch:
 
 jobs:
@@ -13,11 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Upload to Dropbox
-        uses: Lewuathe/dropbox-github-action@v1
+      - uses: deka0106/upload-to-dropbox@v2
         with:
-          dropbox-app-key: ${{ secrets.DROPBOX_APP_KEY }}
-          dropbox-app-secret: ${{ secrets.DROPBOX_APP_SECRET }}
-          dropbox-refresh-token: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
-          source-path: ./cv/aliaksandr-valchetski-cv.pdf
-          target-path: /cv/aliaksandr-valchetski-cv.pdf
+          dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+          src: ./cv/aliaksandr-valchetski-cv.pdf
+          dest: /cv/
+          mode: overwrite
