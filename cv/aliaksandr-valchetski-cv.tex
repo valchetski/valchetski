@@ -44,7 +44,7 @@
 
 \definecolor{gr}{RGB}{225,225,225}
 
-\urlstyle{same}
+\urlstyle{Same}
 
 \raggedbottom
 \raggedright
@@ -112,7 +112,7 @@
     \href{mailto:alex.volchetsky@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{alex.volchetsky@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/valchetski/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} $|$
     \href{https://github.com/valchetski}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} $|$
-    \small{\raisebox{-0.2\height}\faMapMarker\ Wrocław, Poland}
+    \href{https://maps.app.goo.gl/fDMVWK2QSbCE37H89}{\raisebox{-0.2\height}\faMapMarker\ \underline{Wrocław, Poland}}
 \end{center}
 
 %-----------SUMMARY-----------
@@ -127,22 +127,30 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior Software Engineer (.NET)}{August 2022 - Present}
-      {Deltatre}{Wrocław, Poland}
+      {Senior Software Engineer (.NET)}{ August 2022 - Present}
+      {Deltatre}{ Wrocław, Poland}
       \resumeItemListStart
         \resumeItem{Continue working with Bell. Prepared architectural decisions
         for migration from monolith to Microservices. Being responsible for the
         implementation of .NET 6 microservices and shared libraries. Splitting of the
         monolithic apps into microservices and the implementation of new features.}
-        \resumeItem{Improved deployment process in Octopus to be simpler and less error-prone. As a result, the number of issues after releases decreased by a minimum of 50\%.
+        \resumeItem{Developed and maintained Unit Tests using the TDD approach to ensure 
+        the functionality of application modules.
+        Incorporated TestContainers library that allowed using external resources like Mongo and Redis in Integration Tests. 
+        As a result, we enabled them in builds in GitHub Actions that boosted our code reliability. 
+        Overall code coverage reached a minimum of 80\%.}
+        \resumeItem{Collaborated with the QA team on BDD tests that verify our services after deployment. 
+        It allowed us to catch bugs earlier in non-production environments. 
+        The number of successful releases increased by a minimum of 25\%.}
+        \resumeItem{Enhanced deployment process in Octopus to be simpler and less error-prone. As a result, the number of issues after releases decreased by a minimum of 50\%.
         Migrated the CI pipeline to GitHub Actions and created reusable workflows to create builds for the different microservices.}
         \resumeItem{Greater involvement in feature planning. Planning, estimation, and delivery of
         big features. Mentoring 2 new team members.}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Software Engineer (.NET)}{May 2021 - July 2022}
-      {Deltatre}{Minsk, Belarus}
+      {Software Engineer (.NET)}{ May 2021 - July 2022}
+      {Deltatre}{ Minsk, Belarus}
       \resumeItemListStart
         \resumeItem{Collaborated with the Bell Canada. Helped to support and implement new features for Crave, CTV, Noovo, TSN, and RDS brands. All of these brands are OTT solutions in entertainment and sports with 3+ million subscribers.}
         \resumeItem{Cooperated with 3rd party connections, the customer's systems, our infrastructure, and FE. Constant checking and improving product behavior based on monitoring, logs, and SonarQube reports. Performing releases in Octopus.}
@@ -151,8 +159,8 @@
     \resumeItemListEnd
 
     \resumeSubheading
-      {ASP.NET Developer}{June 2018 - May 2021}
-      {Brimit}{Minsk, Belarus}
+      {ASP.NET Developer}{ June 2018 - May 2021}
+      {Brimit}{ Minsk, Belarus}
       \resumeItemListStart
         \resumeItem{Implemented from scratch and supported various projects using Sitecore CMS. Built the structure of the new projects using Sitecore Helix architectural principles (modular architecture with 3 layers).}
         \resumeItem{Worked on classical ASP.NET MVC 5 projects and also on projects with the Sitecore JSS Headless CMS approach (separate FE app and ASP.NET Core GraphQL API) hosted in Azure.}
@@ -160,18 +168,20 @@
         \resumeItem{Configured CI/CD pipelines for new and existing projects using Azure DevOps, Octopus, and TeamCity. Adding of CI/CD pipeline to a project, that used manual deployment previously, reduced the number of deployment issues by 70\%.}
       \resumeItemListEnd
 
+    \newpage
+
     \resumeSubheading
-      {ASP.NET Developer}{March 2016 - June 2018}
-      {Elilink Consulting}{Minsk, Belarus}
+      {ASP.NET Developer}{ March 2016 - June 2018}
+      {Elilink Consulting}{ Minsk, Belarus}
       \resumeItemListStart
-        \resumeItem{Collaborated with Siemens on the Camstar MES system, which helped to optimize manufacturing processes and operations on the shop floor in the medical device, semiconductor, and electronics industries for more than 500 clients.}
+        \resumeItem{Collaborated with Siemens on the Camstar MES system, which optimizes manufacturing processes and operations on the shop floor in the medical device, semiconductor, and electronics industries for more than 500 clients.}
         \resumeItem{Got an idea of what the big projects look like. Has learned to see the bottlenecks in the code. Collaborated in a big team with more than 50 members.}
-        \resumeItem{Fixed a lot of bugs, and that increased my ability to read and understand code written by others. Migrated existing components from WebForms to ASP.NET MVC 5 (.NET Framework 4.7).}
+        \resumeItem{Fixed a lot of bugs, and that strengthened my ability to read and understand code written by others. Migrated existing components from WebForms to ASP.NET MVC 5 (.NET Framework 4.7).}
       \resumeItemListEnd
 
     \resumeSubheading
-      {ASP.NET Developer}{November 2015 - February 2016}
-      {vizor}{Minsk, Belarus}
+      {ASP.NET Developer}{ November 2015 - February 2016}
+      {Vizor}{ Minsk, Belarus}
       \resumeItemListStart
         \resumeItem{Supported the apartment rental service based on the nopCommerce eCommerce platform (ASP.NET MVC 5). Gained experience in commercial development and communication with the customer.}
         \resumeItem{Added new functionality and fixed bugs on the back end and the front end. As a result, Improved my knowledge and skills in JavaScript, jQuery, AngularJS, HTML, CSS, C\#, and SQL.}
@@ -179,14 +189,14 @@
 
   \resumeSubHeadingListEnd
 
-
+  \vspace{10mm}
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: C\#, SQL, JavaScript, Typescript} \\
      \textbf{Frameworks}{: .NET, ASP.NET Core} \\
-     \textbf{Databases}{: MongoDB, MSSQL} \\
+     \textbf{Databases}{: MongoDB, MS SQL} \\
      \textbf{CI/CD}{: GitHub Actions, Octopus, and Azure DevOps} \\
      \textbf{Cloud}{: AWS, Azure} \\
      \textbf{SRE}{: Datadog} \\
@@ -211,7 +221,7 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Belarusian State University of Informatics and Radioelectronics}{Minsk, Belarus}
+      {Belarusian State University of Informatics and Radioelectronics}{ Minsk, Belarus}
       {Bachelor's degree, Information Technology}{2012 - 2017}
   \resumeSubHeadingListEnd
 %-------------------------------------------

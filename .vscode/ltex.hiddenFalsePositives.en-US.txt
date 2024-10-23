@@ -1,0 +1,6 @@
+{"rule":"WHITESPACE_RULE","sentence":"^$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.[ ]\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QIn my current role as a at Deltatre, I'm working on implementing and maintaining a complex application for watching entertainment and sports video on demand and live.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q,\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QI am writing to express my strong interest in the position at .\\E$"}

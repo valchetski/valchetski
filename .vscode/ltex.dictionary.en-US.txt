@@ -1,0 +1,16 @@
+Deltatre
+TeamCity
+Sitecore
+Camstar
+Elilink
+Brimit
+TestContainers
+Mongo
+nopCommerce
+Vizor
+WebForms
+Valchetski
+Aliaksandr
+Noovo
+OTT
+Radioelectronics
