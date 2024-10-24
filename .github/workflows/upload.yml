@@ -11,9 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: deka0106/upload-to-dropbox@v2
+      - name: Dropbox Upload 📦
+        uses: gomes42/gh-actions-dropbox/files/upload@2
         with:
-          dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          src: ./cv/aliaksandr-valchetski-cv.pdf
-          dest: /cv/
-          mode: overwrite
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+          SOURCE_PATH: ./cv/aliaksandr-valchetski-cv.pdf
+          DEST_PATH: /cv/aliaksandr-valchetski-cv.pdf
