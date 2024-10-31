@@ -1,4 +1,6 @@
 # CV
+[aliaksandr-valchetski-cv.pdf](./aliaksandr-valchetski-cv.pdf)
+
 ## Based on:
 - https://github.com/jakegut/resume
 - https://www.overleaf.com/latex/templates/algouniversity-student-resume-template/kvnkfvqcytfd
