@@ -6,3 +6,5 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QI am writing to express my strong interest in the position at .\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QSeptember 2012 - June 2017.\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMigrated the CI pipeline to GitHub Actions and created reusable build workflows for the different microservices that reduced YAML duplication by two times and made CI updates easier and steadier.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtrue\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qshowremote Currently, I'm based in Poland and can work with you remotely via \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q (they act as Employer of Record) or via business incubator.\\E$"}

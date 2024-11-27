@@ -6,6 +6,8 @@
 \usepackage{fontawesome5}
 \usepackage{eso-pic}
 \usepackage{charter}
+\usepackage{ifthen} 
+\usepackage{microtype}
 
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
@@ -15,16 +17,13 @@
 \newcommand{\myname}{Aliaksandr Valchetski} % Your name (e.g. "John Smith")
 \newcommand{\mytitle}{Senior Software Engineer} % Your title (e.g. "Applicant")
 \newcommand{\myemail}{alex.volchetsky@gmail.com} % Your email (e.g. "me@mydomain.com")
-\newcommand{\mylinkedin}{valchetski} % Your LinkedIn profile name (e.g. "my name")
 \newcommand{\myphone}{+48 511 866 698} % Your phone number (e.g. "123.456.7890")
-\newcommand{\mylocation}{Wrocław, Poland} % Your general location (e.g. "PNW, USA")
-\newcommand{\recipient}{Hiring Manager} % The recipient (e.g. "Hiring Manager")
-\newcommand{\greeting}{Dear} % The greeting to use (e.g. "Dear")
-\newcommand{\closer}{Kind Regards} % The closer to use (e.g. "Kind Regards")
 
 % Company information
 \newcommand{\company}{Microsoft Corporation} % The company (e.g. "Microsoft Corporation")
 \newcommand{\position}{Senior Software Engineer} % Position
+\newboolean{showremote} % Declare a boolean variable
+\setboolean{showremote}{false} % Set the boolean variable to true or false
 
 \begin{document}
 
@@ -40,8 +39,8 @@
 
 \href{tel:\myphone}{\raisebox{-0.1\height}\faPhone\ \underline{\myphone}} $|$ 
 \href{mailto:\myemail}{\raisebox{-0.2\height}\faEnvelope\ \underline{\myemail}} $|$ 
-\href{https://linkedin.com/in/\mylinkedin}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} $|$
-\href{https://maps.app.goo.gl/fDMVWK2QSbCE37H89}{\raisebox{-0.2\height}\faMapMarker\ \underline{\mylocation}}
+\href{https://linkedin.com/in/valchetski}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} $|$
+\href{https://maps.app.goo.gl/fDMVWK2QSbCE37H89}{\raisebox{-0.2\height}\faMapMarker\ \underline{Wrocław, Poland}}
 
 \end{center}
 
@@ -50,7 +49,7 @@
 % Opening block
 \today
 \bigbreak
-\vspace{-0.1in}\greeting\ \recipient,
+\vspace{-0.1in}Dear Hiring Manager,
 \bigbreak
 
 % Body
@@ -60,8 +59,14 @@ Having worked in the software industry for over 8 years, I have developed a deep
 From requirement gathering to deployment and maintenance, I have successfully delivered numerous projects.
 With my extensive experience in software development, I am confident that I would be a valuable asset to your team.
 
-In my current role as a \mytitle{} at Deltatre, I'm working on implementing and maintaining a complex application for watching entertainment and sports video on demand and live.
+In my current role as a \mytitle{} at Deltatre, I'm working on creating and maintaining a complex application for watching entertainment and sports video on demand and live.
 It's a Canadian OTT platform with multiple brands and millions of subscribers that uses such technologies as C\#, ASP.NET, Node.js, Docker, GitHub Actions, Octopus, and MongoDB.
+
+\ifthenelse{\boolean{showremote}}{
+Currently, I'm based in Poland and can work with you remotely via \href{https://remote.com/global-hr/employer-of-record}{\underline{Remote.com}} (they act as Employer of Record) or via a business incubator.
+I have a Polish Blue Card residence permit card and that's the reason I cannot work via B2B contract.
+
+}
 
 Please do not hesitate to contact me if you have any additional questions. 
 I would be happy to provide extra details.
@@ -72,10 +77,10 @@ Thank you, and I look forward to hearing back from you about the opportunity.
 \vfill
 
 \begin{flushright}
-\closer,
+Kind Regards,
 
 \myname\\
-\href{mailto:\myemail}{\myemail}\hfill
+\href{mailto:\myemail}{\underline{\myemail}}\hfill
 \end{flushright}
 
 \end{document}
